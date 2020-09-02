@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>com.olegchir.demos.tweetplugin</id>
+    <name>Plugin display name here</name>
+    <vendor email="oleg@jdk.dev" url="https://www.facebook.com/olegchir">olegchir</vendor>
+
+    <description><![CDATA[
+    Tweets any selected text in the editor.
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="TweetAction" class="TweetAction" text="Tweet Action" description="Tweet the selection">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl BACK_SLASH" second-keystroke="ctrl T"/>
+        </action>
+    </actions>
+</idea-plugin>

@@ -1,0 +1,19 @@
+plugins {
+    id 'org.jetbrains.intellij' version '0.4.21'
+}
+
+group 'com.olegchir.demos'
+version '1.0-SNAPSHOT'
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version '2020.2.1'
+}
+patchPluginXml {
+    changeNotes """
+      Initial version of the plugin"""
+}
+
+repositories {
+    mavenCentral()
+}
